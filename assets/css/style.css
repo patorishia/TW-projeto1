@@ -1,0 +1,99 @@
+/* Reset básico para o layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garantir que o header não tenha margens ou espaçamentos desnecessários */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff; /* Ajuste a cor de fundo conforme necessário */
+    padding: 10px 0; /* Adicionando padding para o header não colidir com o conteúdo */
+}
+
+/* O footer */
+#footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Garante que o footer vá para o final */
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 70px;  /* Ajuste para evitar que o conteúdo sobreponha o header */
+    min-height: 100vh; /* Garante que a página ocupe 100% da altura */
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    background-color: #495057;
+}
+
+.nav-item.active .nav-link {
+    font-weight: bold;
+    color: #007bff; /* ou a cor que você preferir */
+}
+
+/* Container */
+.container {
+    margin-top: 30px;
+}
+
+/* Formulários */
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Notícia */
+.news-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.news-item h3 {
+    color: #007bff;
+}
+
+.news-item p {
+    color: #666;
+}
+
